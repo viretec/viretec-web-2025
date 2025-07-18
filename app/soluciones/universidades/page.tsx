@@ -218,7 +218,7 @@ const UniversityHero = () => (
             </Text>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 fade-in" style={{animationDelay: '0.4s'}}>
+          <div className="flex flex-col sm:flex-row gap-6 fade-in" >
             <Button 
               variant="primary" 
               size="xl" 
@@ -240,7 +240,7 @@ const UniversityHero = () => (
         </div>
 
         {/* Métricas */}
-        <div className="fade-in" style={{animationDelay: '0.6s'}}>
+        <div className="fade-in" >
           <Card variant="glass" className="relative overflow-hidden geometric" padding="xl">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-viretec/5 to-transparent"></div>
             
@@ -284,7 +284,6 @@ const UniversityServices = () => (
           hover
           className={`relative overflow-hidden group geometric fade-in`}
           padding="xl"
-          style={{animationDelay: `${index * 0.2}s`}}
         >
           <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-all duration-500`} />
           
@@ -354,7 +353,6 @@ const ResearchAreas = () => (
           hover
           className="relative overflow-hidden group geometric fade-in"
           padding="lg"
-          style={{animationDelay: `${index * 0.15}s`}}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-blue-viretec/10 to-blue-oceano/5 opacity-0 group-hover:opacity-100 transition-all duration-500" />
           
@@ -426,7 +424,6 @@ const TransferProcess = () => (
             variant="glass"
             className="relative overflow-hidden geometric fade-in"
             padding="lg"
-            style={{animationDelay: `${index * 0.15}s`}}
           >
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
               
@@ -490,7 +487,6 @@ const UniversitySuccessStories = () => (
           hover
           className="relative overflow-hidden group geometric fade-in"
           padding="lg"
-          style={{animationDelay: `${index * 0.2}s`}}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-blue-viretec/10 to-blue-oceano/5 opacity-0 group-hover:opacity-100 transition-all duration-500" />
           
@@ -522,7 +518,7 @@ const UniversitySuccessStories = () => (
             </div>
 
             <Text size="small" className="leading-relaxed italic group-hover:text-blanco-perla transition-colors duration-300">
-              "{case_.quote}"
+              &ldquo;{case_.quote}&rdquo;
             </Text>
           </div>
 

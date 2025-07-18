@@ -179,7 +179,7 @@ const InvestorHero = () => (
             </Text>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 fade-in" style={{animationDelay: '0.4s'}}>
+          <div className="flex flex-col sm:flex-row gap-6 fade-in" >
             <Button 
               variant="primary" 
               size="xl" 
@@ -201,7 +201,7 @@ const InvestorHero = () => (
         </div>
 
         {/* Métricas */}
-        <div className="fade-in" style={{animationDelay: '0.6s'}}>
+        <div className="fade-in" >
           <Card variant="glass" className="relative overflow-hidden geometric" padding="xl">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-viretec/5 to-transparent"></div>
             
@@ -245,7 +245,6 @@ const InvestorServices = () => (
           hover
           className={`relative overflow-hidden group geometric fade-in`}
           padding="xl"
-          style={{animationDelay: `${index * 0.2}s`}}
         >
           <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-all duration-500`} />
           
@@ -310,7 +309,6 @@ const SuccessCases = () => (
           hover
           className="relative overflow-hidden group geometric fade-in"
           padding="lg"
-          style={{animationDelay: `${index * 0.2}s`}}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-blue-viretec/10 to-blue-oceano/5 opacity-0 group-hover:opacity-100 transition-all duration-500" />
           
@@ -373,7 +371,6 @@ const InvestmentProcess = () => (
             variant="glass"
             className="relative overflow-hidden geometric fade-in"
             padding="lg"
-            style={{animationDelay: `${index * 0.15}s`}}
           >
             <div className="flex items-start gap-6">
               <div className="flex-shrink-0">

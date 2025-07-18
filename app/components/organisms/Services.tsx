@@ -33,6 +33,74 @@ const businessModels = [
   }
 ];
 
+// --- Components ---
+
+const EcosystemCard = ({ icon: Icon, title, description, href, index }: any) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: index * 0.1 }}
+    viewport={{ once: true }}
+    className="group relative overflow-hidden rounded-xl bg-negro-carbon border border-gris-titanio/20 p-8 transition-all duration-300 hover:scale-105 hover:border-plateado-cromado hover:shadow-metal-lg"
+  >
+    <div className="absolute inset-0 bg-gradient-metal opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+    
+    <div className="relative z-10">
+      <div className="inline-flex p-4 rounded-lg bg-azul-acero/20 text-azul-acero hover:bg-azul-acero hover:text-white mb-6 transition-all duration-300">
+        <Icon className="w-8 h-8" />
+      </div>
+      
+      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-gradient-metal-animated transition-all duration-300">
+        {title}
+      </h3>
+      <p className="text-gris-claro/80 leading-relaxed mb-4">
+        {description}
+      </p>
+      
+      <Link 
+        href={href}
+        className="inline-flex items-center gap-2 text-sm font-semibold text-plateado-cromado hover:text-white transition-colors"
+      >
+        <span>Conoce más</span>
+        <svg className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </Link>
+    </div>
+  </motion.div>
+)
+
+const AudienceCard = ({ title, subtitle, href, cta, index }: any) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: index * 0.1 }}
+    viewport={{ once: true }}
+    className="group relative overflow-hidden rounded-xl bg-negro-carbon border border-gris-titanio/20 p-6 transition-all duration-300 hover:scale-105 hover:border-plateado-cromado hover:shadow-metal-lg"
+  >
+    <div className="absolute inset-0 bg-gradient-metal opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
+    
+    <div className="relative z-10">
+      <h4 className="text-lg font-bold text-white mb-2 group-hover:text-gradient-metal-animated transition-all duration-300">
+        {title}
+      </h4>
+      <p className="text-gris-claro/80 text-sm mb-4">
+        {subtitle}
+      </p>
+      
+      <Link 
+        href={href}
+        className="inline-flex items-center gap-2 text-sm font-semibold text-blue-brillante hover:text-white transition-colors"
+      >
+        <span>{cta}</span>
+        <svg className="w-4 h-4 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </Link>
+    </div>
+  </motion.div>
+)
+
 // --- Main Services Component ---
 
 const Services = () => {

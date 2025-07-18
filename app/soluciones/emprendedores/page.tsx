@@ -179,7 +179,7 @@ const EntrepreneurHero = () => (
             </Text>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 fade-in" style={{animationDelay: '0.4s'}}>
+          <div className="flex flex-col sm:flex-row gap-6 fade-in">
             <Button 
               variant="primary" 
               size="xl" 
@@ -201,7 +201,7 @@ const EntrepreneurHero = () => (
         </div>
 
         {/* Métricas */}
-        <div className="fade-in" style={{animationDelay: '0.6s'}}>
+        <div className="fade-in">
           <Card variant="glass" className="relative overflow-hidden geometric" padding="xl">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-viretec/5 to-transparent"></div>
             
@@ -245,7 +245,6 @@ const EntrepreneurBenefits = () => (
           hover
           className={`relative overflow-hidden group geometric fade-in`}
           padding="xl"
-          style={{animationDelay: `${index * 0.2}s`}}
         >
           <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient} opacity-0 group-hover:opacity-100 transition-all duration-500`} />
           
@@ -310,7 +309,6 @@ const EntrepreneurProcess = () => (
             variant="glass"
             className="relative overflow-hidden geometric fade-in"
             padding="lg"
-            style={{animationDelay: `${index * 0.15}s`}}
           >
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-start">
               
@@ -374,7 +372,6 @@ const SuccessStories = () => (
           hover
           className="relative overflow-hidden group geometric fade-in"
           padding="lg"
-          style={{animationDelay: `${index * 0.2}s`}}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-blue-viretec/10 to-blue-oceano/5 opacity-0 group-hover:opacity-100 transition-all duration-500" />
           
@@ -407,7 +404,7 @@ const SuccessStories = () => (
             </div>
 
             <Text size="small" className="leading-relaxed italic group-hover:text-blanco-perla transition-colors duration-300">
-              "{story.quote}"
+              &ldquo;{story.quote}&rdquo;
             </Text>
             
             <div className="mt-4 text-right">
@@ -422,7 +419,7 @@ const SuccessStories = () => (
       ))}
     </div>
 
-    <div className="text-center fade-in" style={{animationDelay: '0.6s'}}>
+    <div className="text-center fade-in">
       <Button 
         variant="secondary" 
         size="lg" 

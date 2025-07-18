@@ -335,18 +335,18 @@ export const SectionHeader = ({
         </div>
       )}
       
-      <Heading level={2} size="display" className="mb-6 fade-in" style={{animationDelay: '0.2s'}}>
+      <Heading level={2} size="display" className="mb-6 fade-in">
         {title}
       </Heading>
       
       {subtitle && (
-        <Heading level={3} size="subtitle" color="blue" className="mb-6 fade-in" style={{animationDelay: '0.3s'}}>
+        <Heading level={3} size="subtitle" color="blue" className="mb-6 fade-in">
           {subtitle}
         </Heading>
       )}
       
       {description && (
-        <Text size="subtitle" className="max-w-3xl mx-auto fade-in" style={{animationDelay: '0.4s'}}>
+        <Text size="subtitle" className="max-w-3xl mx-auto fade-in">
           {description}
         </Text>
       )}
